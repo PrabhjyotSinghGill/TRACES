@@ -6,6 +6,7 @@ import RadioGroup from '@mui/material/RadioGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import FormControl from '@mui/material/FormControl';
 import FormLabel from '@mui/material/FormLabel';
+import Button from '@mui/material/Button';
 
 function Expenses() {
     return <div className='expenses'>
@@ -15,7 +16,7 @@ function Expenses() {
     <div className='expensesInput'>
         <TextField id="outlined-basic" label="Expense" variant="outlined"></TextField>
         <FormControl>
-        <FormLabel id="demo-radio-buttons-group-label">Gender</FormLabel>
+        <FormLabel id="demo-radio-buttons-group-label">Expenses</FormLabel>
         <RadioGroup
             aria-labelledby="demo-radio-buttons-group-label"
             defaultValue="female"
@@ -27,6 +28,9 @@ function Expenses() {
             <FormControlLabel value="rent" control={<Radio />} label="Rent" />
             <FormControlLabel value="grocery" control={<Radio />} label="Grocery" />
         </RadioGroup>
+        <div>
+            <Button variant="contained" size="medium" color="error">Submit</Button>
+        </div>
         </FormControl>
     </div>  
     </div>;
