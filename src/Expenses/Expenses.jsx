@@ -7,6 +7,7 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import FormControl from '@mui/material/FormControl';
 import FormLabel from '@mui/material/FormLabel';
 import Button from '@mui/material/Button';
+import SendIcon from '@mui/icons-material/Send';
 
 function Expenses() {
     return <div className='expenses'>
@@ -29,7 +30,7 @@ function Expenses() {
             <FormControlLabel value="grocery" control={<Radio />} label="Grocery" />
         </RadioGroup>
         <div>
-            <Button variant="contained" size="medium" color="error">Submit</Button>
+            <Button variant="contained" size="medium" color="error" endIcon={<SendIcon />}>Submit</Button>
         </div>
         </FormControl>
     </div>  
