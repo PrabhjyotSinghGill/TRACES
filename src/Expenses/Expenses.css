@@ -2,5 +2,21 @@
     display: flex;
     flex:1;
     flex-direction: column;
-    background-color: coral;
+    background-color: #C06C84;
+    align-items: center;
+}
+
+.expensesInput{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height:70%;
+    margin-top: 50px;
+    border: 1px solid #f67280;
+    border-radius: 5px;
+    padding:20px;
+}
+
+#demo-radio-buttons-group-label{
+    margin-top: 50px;
 }

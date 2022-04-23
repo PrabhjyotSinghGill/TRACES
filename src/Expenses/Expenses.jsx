@@ -1,11 +1,34 @@
+import { TextField} from '@mui/material';
 import React from 'react';
 import "./Expenses.css";
+import Radio from '@mui/material/Radio';
+import RadioGroup from '@mui/material/RadioGroup';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import FormControl from '@mui/material/FormControl';
+import FormLabel from '@mui/material/FormLabel';
 
 function Expenses() {
     return <div className='expenses'>
     <h3>
         Expenses
-    </h3>    
+    </h3>  
+    <div className='expensesInput'>
+        <TextField id="outlined-basic" label="Expense" variant="outlined"></TextField>
+        <FormControl>
+        <FormLabel id="demo-radio-buttons-group-label">Gender</FormLabel>
+        <RadioGroup
+            aria-labelledby="demo-radio-buttons-group-label"
+            defaultValue="female"
+            name="radio-buttons-group"
+        >
+            <FormControlLabel value="food" control={<Radio />} label="Food" />
+            <FormControlLabel value="travel" control={<Radio />} label="Travel" />
+            <FormControlLabel value="clothing" control={<Radio />} label="Clothing" />
+            <FormControlLabel value="rent" control={<Radio />} label="Rent" />
+            <FormControlLabel value="grocery" control={<Radio />} label="Grocery" />
+        </RadioGroup>
+        </FormControl>
+    </div>  
     </div>;
 }
 
